@@ -1,0 +1,27 @@
+###
+POST   http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombreDeFlor": "Camelia",
+    "codigo": 52,
+    "color": "celeste"
+}
+###
+GET   http://localhost:9000/api/users HTTP/1.1
+
+###
+GET   http://localhost:9000/api/users/64b7fd0b2c42d94b5bc0670d HTTP/1.1
+
+###
+PUT    http://localhost:9000/api/users/64b7fd0b2c42d94b5bc0670d HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Lily Quinteros",
+    "age": 52,
+    "email": "yosoylily@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/64b7fd0b2c42d94b5bc0670d HTTP/1.1
